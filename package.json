@@ -1,0 +1,26 @@
+{
+  "name": "veducate-immersive",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.99.0",
+    "@react-three/fiber": "^8.15.0",
+    "framer-motion": "^12.38.0",
+    "gsap": "^3.12.5",
+    "lenis": "^1.0.42",
+    "next": "^16.2.6",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "three": "^0.163.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^16.2.6"
+  }
+}
