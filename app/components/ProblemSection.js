@@ -1,25 +1,23 @@
 'use client';
 
+import AutoPlayVideo from './AutoPlayVideo';
+
 export default function ProblemSection() {
   const lines = [
     { text: 'Students sit through lectures they could watch on YouTube.' },
-    { text: 'Labs run on <em>decade-old simulations</em> — not real equipment.' },
+    { text: 'Labs run on <em>decade-old simulations</em> - not real equipment.' },
     { text: 'Assignments test memory, <em>not thinking</em>.' },
     { text: 'Placement cells scramble at the last minute.' },
-    { text: 'Faculty spend hours on admin — <em>not mentoring</em>.' },
+    { text: 'Faculty spend hours on admin - <em>not mentoring</em>.' },
     { text: 'The result? Graduates who aren\'t <em>industry-ready</em>.' },
   ];
 
   return (
     <section className="section problem" id="problem">
       <div className="problem-video-wrap">
-        <video
+        <AutoPlayVideo
           className="problem-video"
           src="assets/SCENE 02 — Problem Section.mp4"
-          autoPlay
-          muted
-          loop
-          playsInline
         />
         <div className="problem-overlay" />
       </div>

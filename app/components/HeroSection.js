@@ -1,25 +1,12 @@
 'use client';
-import { useRef, useEffect } from 'react';
+import AutoPlayVideo from './AutoPlayVideo';
 
 export default function HeroSection() {
-  const videoRef = useRef(null);
-
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.play().catch(() => {});
-    }
-  }, []);
-
   return (
     <section className="section section-fullvh hero" id="hero">
-      <video
-        ref={videoRef}
+      <AutoPlayVideo
         className="hero-video"
         src="assets/Scene 01 Hero Background.mp4"
-        autoPlay
-        muted
-        loop
-        playsInline
       />
       <div className="hero-overlay" />
       <div className="hero-content">

@@ -1,5 +1,7 @@
 'use client';
 
+import AutoPlayVideo from './AutoPlayVideo';
+
 export default function EcosystemSection() {
   return (
     <section className="section" id="ecosystem">
@@ -21,9 +23,8 @@ export default function EcosystemSection() {
           </ul>
         </div>
         <div className="pillar-media">
-          <video
+          <AutoPlayVideo
             src="assets/SCENE 04 AI Learning  LMS.mp4"
-            autoPlay muted loop playsInline
             style={{ borderRadius: '24px' }}
           />
         </div>
@@ -58,9 +59,8 @@ export default function EcosystemSection() {
 
       {/* Pillar 03 — VR Labs (Full screen) */}
       <div className="pillar-fullscreen" data-anim="pillar-fs">
-        <video
+        <AutoPlayVideo
           src="assets/SCENE 03  VR  Immersive Engineering Reveal.mp4"
-          autoPlay muted loop playsInline
         />
         <div className="pillar-fs-overlay" />
         <div className="pillar-fs-content">
