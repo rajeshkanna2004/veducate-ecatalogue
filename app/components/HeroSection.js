@@ -7,6 +7,7 @@ export default function HeroSection() {
       <AutoPlayVideo
         className="hero-video"
         src="assets/Scene 01 Hero Background.mp4"
+        eager
       />
       <div className="hero-overlay" />
       <div className="hero-content">
