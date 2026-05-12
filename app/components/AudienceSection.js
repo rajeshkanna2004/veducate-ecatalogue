@@ -16,10 +16,10 @@ export default function AudienceSection() {
       icon: '🎓',
       title: 'Students & Learners',
       outcomes: [
-        'Practice 10K+ coding problems with AI feedback',
+        'Practice 10K+ coding problems with guided hints',
         'Experience VR labs from your hostel room',
         'Build a portfolio that impresses recruiters',
-        'Get matched with internships automatically',
+        'Browse and apply to internships with easy tracking',
       ],
     },
     {
@@ -27,8 +27,8 @@ export default function AudienceSection() {
       title: 'Recruiters & Industry',
       outcomes: [
         'Access pre-vetted, skills-verified talent',
-        'Reduce hiring time with AI-matched candidates',
-        'View detailed skill assessments and portfolios',
+        'Reduce hiring time with verified, skills-tracked candidates',
+        'View detailed skill assessments and verified student profiles',
         'Partner with top engineering colleges directly',
       ],
     },

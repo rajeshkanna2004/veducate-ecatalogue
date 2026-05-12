@@ -75,7 +75,7 @@ const winWinRows = [
   },
   {
     inst: { label: 'Faculty Effectiveness', body: 'Dashboards show exactly which students need help before they fall behind.' },
-    stud: { label: 'Personalised Learning', body: 'AI adapts to your pace. No more falling behind because a lecture moved too fast.' },
+    stud: { label: 'Personalised Learning', body: 'Smart learning adapts to your pace. No more falling behind because a lecture moved too fast.' },
   },
   {
     inst: { label: 'Lab Modernisation', body: 'Replace outdated physical lab infrastructure with 50+ immersive VR experiments at a fraction of the cost.' },

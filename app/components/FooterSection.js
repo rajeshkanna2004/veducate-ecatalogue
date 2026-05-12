@@ -15,7 +15,7 @@ export default function FooterSection() {
         </div>
         <div className="footer-col">
           <h4>Platform</h4>
-          <a href="#ecosystem">AI LMS</a>
+          <a href="#ecosystem">Smart LMS</a>
           <a href="#ecosystem">VR Labs</a>
           <a href="#ecosystem">Coding Engine</a>
           <a href="#ecosystem">Career Hub</a>

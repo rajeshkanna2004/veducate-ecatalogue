@@ -2,12 +2,17 @@ import './globals.css';
 
 export const metadata = {
   title: 'Veducate — The Future of Engineering Education',
-  description: 'Veducate transforms engineering education with AI-powered learning, immersive VR labs, hands-on coding practice, and career acceleration — all in one integrated platform.',
+  description: 'Veducate transforms engineering education with smart learning, immersive VR labs, hands-on coding practice, and career acceleration — all in one integrated platform.',
   keywords: 'engineering education, VR labs, AI learning, coding platform, EdTech, immersive learning',
   openGraph: {
     title: 'Veducate — The Future of Engineering Education',
-    description: 'Transform your institution with AI + VR + hands-on learning.',
+    description: 'Transform your institution with Smart Learning + VR + hands-on practice.',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Veducate — The Future of Engineering Education',
+    description: 'Transform your institution with Smart Learning + VR + hands-on practice.',
   },
 };
 
