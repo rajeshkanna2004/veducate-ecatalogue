@@ -13,7 +13,7 @@ export default function IntroSection() {
     canvas.height = H;
 
     const particles = [];
-    const PARTICLE_COUNT = 800;
+    const PARTICLE_COUNT = window.matchMedia('(max-width: 768px)').matches ? 120 : 260;
     const centerX = W / 2, centerY = H / 2;
 
     // Generate target positions in a "V" shape for Veducate
@@ -84,17 +84,9 @@ export default function IntroSection() {
         const floatX = assembled && p.progress > 0.8 ? Math.sin(elapsed * 2 + p.tx) * 1.5 : 0;
         const floatY = assembled && p.progress > 0.8 ? Math.cos(elapsed * 1.5 + p.ty) * 1.5 : 0;
 
-        const gradient = ctx.createRadialGradient(
-          p.x + floatX, p.y + floatY, 0,
-          p.x + floatX, p.y + floatY, p.size * 3
-        );
-        gradient.addColorStop(0, `rgba(108, 99, 255, ${p.alpha})`);
-        gradient.addColorStop(0.5, `rgba(0, 212, 170, ${p.alpha * 0.4})`);
-        gradient.addColorStop(1, 'rgba(108, 99, 255, 0)');
-
         ctx.beginPath();
-        ctx.arc(p.x + floatX, p.y + floatY, p.size * 2, 0, Math.PI * 2);
-        ctx.fillStyle = gradient;
+        ctx.arc(p.x + floatX, p.y + floatY, p.size, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(74, 158, 255, ${p.alpha})`;
         ctx.fill();
       });
 
@@ -120,7 +112,7 @@ export default function IntroSection() {
         </h2>
         <p className="intro-subtitle" data-anim="intro">
           One integrated ecosystem that transforms how engineering colleges teach, 
-          how students learn, and how graduates launch careers — powered by AI, 
+          how students learn, and how graduates launch careers — powered by smart technology, 
           immersive VR, and real-world practice.
         </p>
       </div>
@@ -130,7 +122,7 @@ export default function IntroSection() {
         <div className="orbit-ring" />
         <div className="orbit-ring" />
         {[
-          { label: 'AI LMS', angle: '-90deg', radius: '170px', duration: '24s' },
+          { label: 'Smart LMS', angle: '-90deg', radius: '170px', duration: '24s' },
           { label: 'VR Labs', angle: '0deg', radius: '170px', duration: '24s' },
           { label: 'Coding', angle: '90deg', radius: '170px', duration: '24s' },
           { label: 'Careers', angle: '180deg', radius: '170px', duration: '24s' },

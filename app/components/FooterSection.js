@@ -5,8 +5,8 @@ export default function FooterSection() {
     <footer className="footer" id="footer">
       <div className="footer-grid">
         <div className="footer-brand">
-          <img src="assets/Veducate Logo.png" alt="Veducate" style={{ height: '36px' }} />
-          <p>Transforming engineering education through AI, immersive VR, and real-world practice.</p>
+          <img src="assets/Veducate Logo.png" alt="Veducate" style={{ height: '36px' }} loading="lazy" decoding="async" />
+          <p>Transforming engineering education through smart learning, immersive VR, and real-world practice.</p>
           <div className="footer-social">
             <a href="#" aria-label="LinkedIn">in</a>
             <a href="#" aria-label="Instagram">📷</a>

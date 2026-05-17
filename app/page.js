@@ -9,7 +9,7 @@ import ProofSection from './components/ProofSection';
 import AudienceSection from './components/AudienceSection';
 import CTASection from './components/CTASection';
 import FooterSection from './components/FooterSection';
-import CursorTrail from './components/CursorTrail';
+
 import useGSAPAnimations from './hooks/useGSAPAnimations';
 import useSmoothScroll from './hooks/useSmoothScroll';
 
@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
     <>
-      <CursorTrail />
+
       <Navigation />
       <main ref={mainRef}>
         <HeroSection />

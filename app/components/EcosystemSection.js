@@ -5,14 +5,13 @@ import AutoPlayVideo from './AutoPlayVideo';
 export default function EcosystemSection() {
   return (
     <section className="section" id="ecosystem">
-      {/* Pillar 01 — Smart Learning */}
       <div className="ecosystem-pillar" data-anim="pillar">
         <div className="pillar-text">
           <div className="pillar-number">01</div>
           <p className="pillar-label">Smart Learning Platform</p>
           <h2 className="pillar-title">Smart Learning That Adapts to Every Student</h2>
           <p className="pillar-desc">
-            Our smart learning engine helps every student move at their own pace — keeping learning
+            Our smart learning engine helps every student move at their own pace - keeping learning
             engaging, accessible, and built for real understanding.
           </p>
           <ul className="pillar-features">
@@ -24,13 +23,13 @@ export default function EcosystemSection() {
         </div>
         <div className="pillar-media">
           <AutoPlayVideo
-            src="assets/SCENE 04 AI Learning  LMS.mp4"
+            src="assets/lms.mp4"
             style={{ borderRadius: '24px' }}
+            label="Smart LMS learning section preview"
           />
         </div>
       </div>
 
-      {/* Pillar 02 — Coding Platform */}
       <div className="ecosystem-pillar reverse" data-anim="pillar">
         <div className="pillar-text">
           <div className="pillar-number">02</div>
@@ -48,44 +47,42 @@ export default function EcosystemSection() {
           </ul>
         </div>
         <div className="pillar-media">
-          <div className="pillar-placeholder gradient-1" style={{ position: 'relative', minHeight: '500px', borderRadius: '24px' }}>
-            <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: '12px' }}>
-              <span style={{ fontSize: '48px' }}>💻</span>
-              <span style={{ color: 'rgba(255,255,255,0.3)', fontSize: '14px' }}>Coding Platform Preview</span>
-            </div>
-          </div>
+          <AutoPlayVideo
+            src="assets/code execution.mp4"
+            style={{ borderRadius: '24px' }}
+            label="Code execution section preview"
+          />
         </div>
       </div>
 
-      {/* Pillar 03 — VR Labs (Full screen) */}
       <div className="pillar-fullscreen" data-anim="pillar-fs">
         <AutoPlayVideo
           src="assets/SCENE 03  VR  Immersive Engineering Reveal.mp4"
+          label="VR immersive engineering lab reveal"
         />
         <div className="pillar-fs-overlay" />
         <div className="pillar-fs-content">
-          <div className="pillar-number" style={{ color: 'rgba(255,255,255,0.08)', fontSize: '100px', marginBottom: '0' }}>03</div>
+          <div className="pillar-number" style={{ color: 'var(--text-tertiary)', fontSize: '100px', marginBottom: '0' }}>03</div>
           <p className="pillar-label">VR Immersive Labs</p>
-          <h2 className="pillar-title" style={{ color: '#fff' }}>
-            Step Inside the Lab — From Anywhere
+          <h2 className="pillar-title" style={{ color: 'var(--text-primary)' }}>
+            Step Inside the Lab - From Anywhere
           </h2>
-          <p className="pillar-desc" style={{ color: 'rgba(255,255,255,0.8)', maxWidth: '600px', margin: '0 auto 24px' }}>
+          <p className="pillar-desc" style={{ color: 'var(--text-secondary)', maxWidth: '600px', margin: '0 auto 24px' }}>
             50+ fully simulated engineering experiments in VR. Students interact with equipment,
-            run experiments, and learn by doing — no physical lab required.
+            run experiments, and learn by doing - no physical lab required.
           </p>
-          <button className="btn-primary">Experience the Lab →</button>
+          <button className="btn-primary">Experience the Lab</button>
         </div>
       </div>
 
-      {/* Pillar 04 — Internships */}
       <div className="ecosystem-pillar" data-anim="pillar">
         <div className="pillar-text">
           <div className="pillar-number">04</div>
           <p className="pillar-label">Internship & Career Hub</p>
-          <h2 className="pillar-title">From Campus to Career — Seamlessly</h2>
+          <h2 className="pillar-title">From Campus to Career - Seamlessly</h2>
           <p className="pillar-desc">
             Connect students directly with hiring partners. Internship listings, placement tracking,
-            and verified student profiles — all in one place, easy to manage.
+            and verified student profiles - all in one place, easy to manage.
           </p>
           <ul className="pillar-features">
             <li>Internship listings and application tracking</li>
@@ -95,16 +92,16 @@ export default function EcosystemSection() {
           </ul>
         </div>
         <div className="pillar-media">
-          <div className="pillar-placeholder gradient-2" style={{ position: 'relative', minHeight: '500px', borderRadius: '24px' }}>
-            <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: '12px' }}>
-              <span style={{ fontSize: '48px' }}>🚀</span>
-              <span style={{ color: 'rgba(255,255,255,0.3)', fontSize: '14px' }}>Career Hub Preview</span>
-            </div>
+          <div className="career-video-wrapper">
+            <AutoPlayVideo
+              className="career-video"
+              src="assets/SCENE 07 — Placement Outcome.mp4"
+              label="Veducate placement outcome video showing a confident engineering graduate"
+            />
           </div>
         </div>
       </div>
 
-      {/* Pillar 05 — Analytics */}
       <div className="ecosystem-pillar reverse" data-anim="pillar">
         <div className="pillar-text">
           <div className="pillar-number">05</div>
@@ -123,20 +120,20 @@ export default function EcosystemSection() {
         </div>
         <div className="pillar-media">
           <div className="analytics-mock">
-            <div style={{ fontSize: '13px', color: 'rgba(255,255,255,0.4)', marginBottom: '8px' }}>Student Performance Dashboard</div>
+            <div className="analytics-mock-title">Student Performance Dashboard</div>
             <div className="mock-bars" id="analytics-bars">
               {[75, 60, 85, 45, 90, 70, 55, 80, 65, 95].map((h, i) => (
                 <div key={i} className="mock-bar" style={{ height: `${h}%` }} />
               ))}
             </div>
-            <div style={{ marginTop: '20px', display: 'flex', gap: '24px' }}>
+            <div className="analytics-snapshot">
               <div>
-                <div style={{ fontSize: '24px', fontWeight: 700, color: '#6C63FF' }}>87%</div>
-                <div style={{ fontSize: '11px', color: 'rgba(255,255,255,0.4)' }}>Avg Completion</div>
+                <div className="analytics-value analytics-value-accent">87%</div>
+                <div className="analytics-mock-label">Avg Completion</div>
               </div>
               <div>
-                <div style={{ fontSize: '24px', fontWeight: 700, color: '#00D4AA' }}>92%</div>
-                <div style={{ fontSize: '11px', color: 'rgba(255,255,255,0.4)' }}>Engagement Rate</div>
+                <div className="analytics-value analytics-value-secondary">92%</div>
+                <div className="analytics-mock-label">Engagement Rate</div>
               </div>
             </div>
           </div>

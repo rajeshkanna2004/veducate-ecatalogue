@@ -17,7 +17,8 @@ export default function ProblemSection() {
       <div className="problem-video-wrap">
         <AutoPlayVideo
           className="problem-video"
-          src="assets/SCENE 02 — Problem Section.mp4"
+          src="assets/traditional classroom.mp4"
+          label="Traditional classroom background"
         />
         <div className="problem-overlay" />
       </div>

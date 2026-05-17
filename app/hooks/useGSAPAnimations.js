@@ -12,6 +12,8 @@ export default function useGSAPAnimations(mainRef) {
         gsapModule = gsapLib.gsap || gsapLib.default;
         ScrollTriggerModule = stLib.ScrollTrigger || stLib.default;
         gsapModule.registerPlugin(ScrollTriggerModule);
+        gsapModule.defaults({ force3D: true, overwrite: 'auto' });
+        ScrollTriggerModule.config({ ignoreMobileResize: true });
       } catch {
         console.warn('GSAP not loaded, skipping animations');
         return;
@@ -36,7 +38,8 @@ export default function useGSAPAnimations(mainRef) {
               trigger: line,
               start: 'top 80%',
               end: 'top 50%',
-              toggleActions: 'play none none reverse',
+              toggleActions: 'play none none none',
+              once: true,
             },
           }
         );
@@ -50,6 +53,7 @@ export default function useGSAPAnimations(mainRef) {
           scrollTrigger: {
             trigger: '[data-anim="pain-cards"]',
             start: 'top 75%',
+            once: true,
           },
         }
       );
@@ -59,7 +63,7 @@ export default function useGSAPAnimations(mainRef) {
         { opacity: 0, y: 30 },
         {
           opacity: 1, y: 0, duration: 1, ease: 'power2.out',
-          scrollTrigger: { trigger: '[data-anim="pivot"]', start: 'top 80%' },
+          scrollTrigger: { trigger: '[data-anim="pivot"]', start: 'top 80%', once: true },
         }
       );
 
@@ -68,7 +72,7 @@ export default function useGSAPAnimations(mainRef) {
         { opacity: 0, y: 40 },
         {
           opacity: 1, y: 0, duration: 1, stagger: 0.2, ease: 'power3.out',
-          scrollTrigger: { trigger: '#intro', start: 'top 60%' },
+          scrollTrigger: { trigger: '#intro', start: 'top 60%', once: true },
         }
       );
 
@@ -79,7 +83,7 @@ export default function useGSAPAnimations(mainRef) {
           { opacity: 0, x: direction },
           {
             opacity: 1, x: 0, duration: 1, ease: 'power3.out',
-            scrollTrigger: { trigger: pillar, start: 'top 70%' },
+            scrollTrigger: { trigger: pillar, start: 'top 70%', once: true },
           }
         );
       });
@@ -89,7 +93,7 @@ export default function useGSAPAnimations(mainRef) {
         { opacity: 0, scale: 0.9 },
         {
           opacity: 1, scale: 1, duration: 1.2, ease: 'power3.out',
-          scrollTrigger: { trigger: '[data-anim="pillar-fs"]', start: 'top 50%' },
+          scrollTrigger: { trigger: '[data-anim="pillar-fs"]', start: 'top 50%', once: true },
         }
       );
 
@@ -99,7 +103,7 @@ export default function useGSAPAnimations(mainRef) {
           { opacity: 0, y: 50 },
           {
             opacity: 1, y: 0, duration: 0.9, ease: 'power3.out',
-            scrollTrigger: { trigger: el, start: 'top 80%' },
+            scrollTrigger: { trigger: el, start: 'top 80%', once: true },
           }
         );
       });
@@ -109,7 +113,7 @@ export default function useGSAPAnimations(mainRef) {
         { opacity: 0, y: 40 },
         {
           opacity: 1, y: 0, duration: 1, ease: 'power3.out',
-          scrollTrigger: { trigger: '.proof-stats', start: 'top 75%' },
+          scrollTrigger: { trigger: '.proof-stats', start: 'top 75%', once: true },
         }
       );
     }

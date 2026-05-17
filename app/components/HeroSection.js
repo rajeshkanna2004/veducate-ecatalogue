@@ -6,8 +6,9 @@ export default function HeroSection() {
     <section className="section section-fullvh hero" id="hero">
       <AutoPlayVideo
         className="hero-video"
-        src="assets/Scene 01 Hero Background.mp4"
+        src="assets/hero background.mp4"
         eager
+        label="Veducate cinematic hero background"
       />
       <div className="hero-overlay" />
       <div className="hero-content">
@@ -20,7 +21,7 @@ export default function HeroSection() {
           The Future of Engineering Education Starts Here
         </h1>
         <p className="hero-subtitle" data-anim="hero">
-          AI-powered learning, immersive VR labs, real-world coding practice, and career
+          Smart learning, immersive VR labs, real-world coding practice, and career
           acceleration — unified in one transformative platform.
         </p>
         <div className="hero-ctas" data-anim="hero">
